@@ -3,7 +3,9 @@
 <p>고객센터 화면입니다.</p>
 {% for word in notices.all %}
 <div class>
-    <h2>{{ word.title }}</h2>
+    <a href="{% url 'detail' word.id %}">
+        <h2>{{ word.title }}</h2>
+    </a>
     <p>{{ word.pub_date }}</p>
     <p>{{ word.summary }}</p>
 {% endfor %}
