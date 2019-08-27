@@ -16,8 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 import Mainscreen.views
+import servicecenter.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', Mainscreen.views.home, name='home')
+    path('', Mainscreen.views.home, name='home'),
+    path('servicecenter/', servicecenter.views.home, name='servicecenter'),
+    path('servicecenter/<int:servicecenter_id>/', servicecenter.views.detail, name='detail'),
 ]

@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<p>고객센터 화면 안 게시글 확인입니다.</p>
+{% for word in notices.all %}
+<div class>
+    <h2>{{ word.title }}</h2>
+    <p>{{ word.pub_date }}</p>
+    <p>{{ word.body }}</p>
+{% endfor %}
+{% endblock %}
