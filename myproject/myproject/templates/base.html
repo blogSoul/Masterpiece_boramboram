@@ -28,6 +28,12 @@
 		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
+	<link rel="stylesheet" herf="/css/bootstrap.min.css">
+	<link rel="stylesheet" herf="/css/font-awesome.min.css">
+	<link rel="stylesheet" herf="/css/nouislider.min.css">
+	<link rel="stylesheet" herf="/css/slick.css">
+	<link rel="stylesheet" herf="/css/slick-theme.css">
+	<link rel="stylesheet" herf="/css/style.css">
 </head>
 
 <body>
@@ -55,7 +61,7 @@
 								</div>
 								<strong class="text-uppercase">My Account</strong>
 							</div>
-							<a href="#" class="text-uppercase">Login</a> / <a href="#" class="text-uppercase">Join</a>
+							<a href="{% url 'login' %}" class="text-uppercase">Login</a> / <a href="{% url 'signup' %}" class="text-uppercase">Join</a>
 						</li>
 						<!-- /Account -->
 
@@ -100,7 +106,7 @@
 					<ul class="menu-list">
 						<li><a href="#">의뢰하기</a></li>
 						<li><a href="#">디자이너보기</a></li>
-						<li><a href="#">고객센터</a></li>
+						<li><a href="{% url 'servicecenter' %}">고객센터</a></li>
 						<li><a href="#">마이페이지</a></li>
 					</ul>
 				</div>
