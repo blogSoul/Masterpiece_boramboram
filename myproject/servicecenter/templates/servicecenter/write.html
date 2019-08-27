@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+<p>고객센터 화면 안 글쓰기 화면입니다.</p>
+<br>
+<div class="container">
+	<form action="{% url 'create' %}">
+	  <h4>제목: </h4>
+	  <input type="text" name="title">
+	  <br>
+	  <br>
+	  <h4>본문: </h4>
+	  <textarea cols=40 rows=10 name="body"></textarea>
+	  <br>
+	  <br>
+	  <input class="btn btn-dark" type="submit" value="제출하기">
+  </form>
+</div>
+    <a href="{% url 'servicecenter' %}">돌아가기</a>
+{% endblock %}
