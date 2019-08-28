@@ -7,6 +7,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
+'''
 secret = os.path.join(BASE_DIR, 'myproject/keys.json')
 
 with open(secret) as f:
@@ -15,9 +16,9 @@ with open(secret) as f:
         secret = secrets['SECRET_KEY']
     except KeyError:
         raise ImproperlyConfigured(error_msg)
-
+'''
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = secret
+SECRET_KEY = 'ut-b@*yoopm0^8ibf33sh5tx&4kg$@b%$yt17*u37ll9xlg1ye'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -121,3 +122,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS = [os.path.join(BASE_DIR, '../FrontEndFile')]
