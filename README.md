@@ -51,7 +51,7 @@
 ![ex_screenshot](./img/모그리면돼.jpg)
 
 * 도메인 화면
-![ex_screenshot](./img/화면기획/보람보람-화면기획/슬라이드1.jpg)
+![ex_screenshot](./img/화면기획/보람보람-화면기획/슬라이드1.JPG)
 
 
 
