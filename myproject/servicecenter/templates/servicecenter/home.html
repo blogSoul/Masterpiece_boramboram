@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<p>고객센터 화면입니다.</p>
+{% for word in notices.all %}
+<div class>
+    <a href="{% url 'detail' word.id %}">
+        <h2>{{ word.title }}</h2>
+    </a>
+    <p>{{ word.pub_date }}</p>
+    <p>{{ word.summary }}</p>
+{% endfor %}
+    <a href="{% url 'write' %}">글쓰기</a>
+{% endblock %}

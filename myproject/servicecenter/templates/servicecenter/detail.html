@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<p>고객센터 화면 안 게시글 확인입니다.</p>
+<div class>
+    <h2>{{ notice.title }}</h2>
+    <p>{{ notice.pub_date }}</p>
+    <p>{{ notice.body }}</p>
+</div>
+    <a href="{% url 'servicecenter' %}">돌아가기</a>
+{% endblock %}
