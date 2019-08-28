@@ -2,6 +2,8 @@
 {% block content %}
 <p>회원가입 화면입니다.</p>
 <form>
+    <form method="POST" action="{% url 'signup'%}">
+    {% csrf_token %}
     Username:
     <br>
     <input name="username" type="text" value="">
