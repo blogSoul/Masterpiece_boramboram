@@ -53,7 +53,9 @@
 * 도메인 화면
 ![ex_screenshot](./img/화면기획/보람보람-화면기획/슬라이드1.JPG)
 
-
+* 개발일정
+!
+![ex_screenshot](./img/모그리면돼.jpg)
 
 ##
 <STRONG>데이터 관리</STRONG>
