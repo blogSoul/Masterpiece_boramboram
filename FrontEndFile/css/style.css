@@ -196,6 +196,18 @@ hr {
   height: 60px;
 }
 
+.cate_left_arrow {
+  display: relative;
+  padding: 5px;
+  float:left;
+}
+
+.cate_right_arrow {
+  display: relative;
+  padding: 5px;
+  float:right;
+}
+
 /*----------------------------*\
 	Inputs
 \*----------------------------*/
@@ -544,9 +556,8 @@ textarea.input {
 
 .menu-nav .menu-list>li>a {
   display: block;
-  padding: 15px 30px 15px 70px;
+  padding: 15px 60px 15px 30px;
   color: #FFF;
-  text-transform: uppercase;
 }
 
 .menu-nav .menu-list>li>a:hover, .menu-nav .menu-list>li>a:focus, .menu-nav .menu-list>li.dropdown.open>a {
@@ -968,6 +979,9 @@ textarea.input {
   margin-right: 15px;
   margin-left: 15px;
 }
+
+
+
 
 /*=========================================================
 	06 - 2 -> DESIGNER
