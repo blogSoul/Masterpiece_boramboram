@@ -54,6 +54,8 @@
 ![ex_screenshot](./img/화면기획/보람보람-화면기획/슬라이드1.JPG)
 
 * 개발일정
+
+
 ![ex_screenshot](./img/일정계획표.png)
 
 ##
