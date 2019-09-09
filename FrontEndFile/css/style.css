@@ -135,6 +135,15 @@ hr {
   border: none;
 }
 
+.icon-btn.mobile-btn {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  padding: 0px;
+  border: none; 
+}
+
 .main-btn {
   color: #30323A;
   background-color: #FFF;
@@ -143,6 +152,19 @@ hr {
 }
 
 .main-btn:hover, .main-btn:focus {
+  color: #9114fc;
+  -webkit-box-shadow: 0px 0px 0px 1px #9114fc inset, 0px 0px 0px 0px #9114fc;
+  box-shadow: 0px 0px 0px 1px #9114fc inset, 0px 0px 0px 0px #9114fc;
+}
+
+.mobile-btn {
+  color: #30323A;
+  background-color: #FFF;
+  -webkit-box-shadow: 0px 0px 0px 1px #DADADA inset, 0px 0px 0px 6px transparent;
+  box-shadow: 0px 0px 0px 1px #DADADA inset, 0px 0px 0px 6px transparent;
+}
+
+.mobile-btn:hover, .mobile-btn:focus {
   color: #9114fc;
   -webkit-box-shadow: 0px 0px 0px 1px #9114fc inset, 0px 0px 0px 0px #9114fc;
   box-shadow: 0px 0px 0px 1px #9114fc inset, 0px 0px 0px 0px #9114fc;
