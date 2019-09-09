@@ -12,7 +12,5 @@ urlpatterns = [
     path('servicecenter/<int:servicecenter_id>/', servicecenter.views.detail, name='detail'),
     path('servicecenter/write/', servicecenter.views.write, name='write'),
     path('servicecenter/create/', servicecenter.views.create, name='create'),
-    path('signup/', accounts.views.signup, name='signup'),
-    path('login/', accounts.views.login, name='login'),
     path('accounts/', include('accounts.urls')),
 ]

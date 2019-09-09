@@ -1,7 +1,15 @@
 {% extends 'base.html' %}
 {% block content %}
+
+{% if error %}
+{{ error }}
+<br>
+<br>
+{% endif %}
+
 <p>로그인화면입니다.</p>
-<form>
+<form method="POST" action="{% url 'login'%}">
+    {% csrf_token %}
     Username:
     <br>
     <input name="username" type="text" value="">
