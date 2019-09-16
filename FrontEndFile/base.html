@@ -39,8 +39,8 @@
 				<div class="pull-left">
 					<!-- Logo -->
 					<div class="header-logo">
-						<a class="logo" href="#">
-							<img src="./img/main_logo.png" alt="">
+						<a href="{% url 'home' %}" class="logo" >
+							<img  src="./img/main_logo.png" alt="">
 						</a>
 					</div>
 					<!-- /Logo -->
@@ -57,12 +57,12 @@
 							</div>
 							{% if user.is_authenticated %}
 							<a href="#" class="text-uppercase">환영합니다. {{ user.username }} 님</a> / <a href="javascript:{document.getElementById('logout').submit()}" class="text-uppercase">Join</a>
-							<form id="logout" method="POST" action="">
+							<form id="logout" method="POST" action="{% url 'logout' %}">
 								{% csrf_token %} <input type="hidden" />
 							</form>
 							{% else %}
 							<a href="{% url 'login' %}" class="text-uppercase">Login</a> / <a href="{% url 'signup' %}" class="text-uppercase">Join</a>
-						{% endif %}
+						    {% endif %}
 						</li>
 						<!-- /Account -->
 
