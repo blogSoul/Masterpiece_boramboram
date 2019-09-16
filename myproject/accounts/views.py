@@ -8,6 +8,9 @@ def signup(request):
         if request.POST['password1'] == request.POST['password2']:
             try:
                 user = User.objects.get(username=request.POST['username'])
+                nickname = User.objects.get(nickname=request.POST['nickname'])
+                phone_number = User.objects.get(phone_number=request.POST['phonenumber1'] + request.POST['phonenumber2'] + request.POST['phonenumber3'])
+                email = User.objects.get(email=request.POST['email'])
                 return render(request, 'account/signup.html', {'error': 'Username has already been taken'})
             except User.DoesNotExist:
                 user = User.objects.create_user(

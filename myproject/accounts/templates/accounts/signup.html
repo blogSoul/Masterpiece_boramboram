@@ -11,22 +11,35 @@
 <h1>Sign Up!</h1>
 
 <form method="POST" action="{% url 'signup'%}">
-
-{% csrf_token %}
-Username:
-<br>
-<input name="username"  type="text" value="">
-<br>
-Password:
-<br>
-<input name="password1"  type="password" value="">
-<br>
-Confirm Password:
-<br>
-<input name="password2"  type="password" value="">
-<br>
-<br>
-<input class="btn btn-primary" type="submit" value="Sign Up!">
+    {% csrf_token %}
+    Username:
+    <br>
+    <input name="username" type="text" value="">
+    <br>
+    Password:
+    <br>
+    <input name="password1" type="password" value="">
+    <br>
+    Confirm Password:
+    <br>
+    <input name="password2" type="password" value="">
+    <br>
+    Nickname:
+    <br>
+    <input name="nickname"  type="text" value="">
+    <br>
+    Phone number:
+    <br>
+    <input name="phonenumber1"  type="phonenumber1" value=""> - <input name="phonenumber2"  type="phonenumber2" value=""> - <input name="phonenumber3"  type="phonenumber3" value="">
+    <br>
+    Email:
+    <br>
+    <input name="email"  type="text" value="">
+    <br>
+</form>
+<form method="POST" action="{% url 'signup'%}">
+    <br>
+    <input class="btn btn-primary" type="submit" value="Sign Up!">
 </form>
 
 {% endblock %}
