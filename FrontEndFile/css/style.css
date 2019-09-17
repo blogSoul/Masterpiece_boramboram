@@ -44,6 +44,8 @@ Table OF Contents
 ------ Product view
 ------ Product details
 ------ Product tab
+9 > DESIGNER PAGE
+------ Aside
 9 > CHECKOUT PAGE
 10 > FOOTER
 11 > SLICK
@@ -208,6 +210,12 @@ hr {
   float:right;
 }
 
+.icon-facebook, .icon-twitter, .icon-instagram {
+  color:darkgrey;
+  font-size:15px;
+  padding: 5px;
+}
+
 /*----------------------------*\
 	Inputs
 \*----------------------------*/
@@ -303,6 +311,12 @@ textarea.input {
   margin-top:0px; /* nav와 footer 사이 여백설정*/
 }
 
+.section-designer {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top:0px; /* nav와 footer 사이 여백설정*/
+}
+
 .section-grey {
   background: #F6F7F8;
 }
@@ -375,42 +389,6 @@ textarea.input {
   max-height: 70px;
 }
 
-/*----------------------------*\
-	Search header
-
-
-.header-search {
-  display: inline-block;
-  padding: 15px 0px;
-  max-width: 400px;
-}
-
-.header-search>form {
-  position: relative;
-}
-
-.header-search>form .search-input {
-  padding-left: 150px;
-  padding-right: 45px;
-}
-
-.header-search>form .search-categories {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 135px;
-}
-
-.header-search>form .search-btn {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  width: 40px;
-  height: 40px;
-  background-color: transparent;
-  border: none;
-}
-\*----------------------------*/
 
 /*----------------------------*\
 	Account header
@@ -1523,6 +1501,76 @@ textarea.input {
 }
 
 /*=========================================================
+	09 -> DESIGNER PAGE
+===========================================================*/
+
+
+#designer {
+  margin:0;
+  padding:0px;
+  padding-left:15px;
+  border:0;
+}
+
+#designer-profile {
+  background:#F6F7F8;
+	float:left;
+  width:270px;
+  height:auto;
+}
+
+#designer-content {
+  background:#ffffff;
+  width:auto;
+  height:auto;
+  margin-left:270px;
+}
+
+#designer-profile .designer-image {
+  padding-top:105%;
+  padding-bottom:50px;
+}
+
+#designer-profile .designer-image>img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+#designer-profile .designer-intro {
+  padding-bottom:105%;
+}
+
+#designer-profile .designer-intro .designer-name {
+  font-size: 26px;
+  font-weight: bolder;
+  font-style: italic;
+  color:#30323A;
+}
+
+#designer-profile .designer-intro .designer-name>img {
+  width:10px;
+  height:10px;
+  margin-bottom:20px;
+  margin-left:5px;
+  margin-right:5px;
+}
+
+#designer-profile .designer-intro .designer-info {
+  font-size: 16px;
+  color:darkgrey;
+  font-weight:normal;
+}
+
+#designer-content .designer-single .designer-thumb>img {
+  padding:30px;
+  width: 80%;
+  height: auto;
+}
+
+
+
+/*=========================================================
 	09 -> CHECKOUT PAGE
 ===========================================================*/
 
@@ -1695,6 +1743,12 @@ textarea.input {
 	12 -> RESPONSIVE
 ===========================================================*/
 
+@media only screen and (max-width: 1200px) {
+  [class*='col-md'] {
+    width: 50%;
+  }
+}
+
 @media only screen and (max-width: 991px) {
   #home .home-wrap {
     margin-left: 0px;
@@ -1705,9 +1759,36 @@ textarea.input {
   .product-reviews {
     margin-bottom: 30px;
   }
+
+  #designer {
+    padding:0px;
+  }
+
+  #designer-profile {
+    float:none;
+    width:auto;
+    height:350px;
+  }
+
+  #designer-content {
+    float:none;
+    width:auto;
+    height:auto;
+    margin-left:0px;
+  }
+
+  #designer-profile .designer-image {
+    padding-top:50px;
+    padding-bottom:50px;
+  }
+
+  [class*='col-md'] {
+    width: 50%;
+  }
+
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 720px) {
   .banner h1 {
     font-size: 36px;
   }
