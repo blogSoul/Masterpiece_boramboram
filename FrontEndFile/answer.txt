@@ -23,3 +23,12 @@ designer.html 생성
 designer.html 완료
 designer_select.html 완료
 22일까지 2주차 계획표에 포함된 페이지 생성 예정
+
+
+2019.09.23 update
+알아보기 쉽게 하기 위해 html 파일명 변경
+ㄴproduct.html => product_detail.html
+  cate_all.html => product_cate_all.html
+  designer_select.html => designer_detail.html
+모바일 최적화를 위해 footer section 및 col-md 클래스 등 전체 수정
+product_detail.html 완성

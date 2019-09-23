@@ -39,8 +39,6 @@
 				<div class="pull-left">
 					<!-- Logo -->
 					<div class="header-logo">
-						<a href="{% url 'home' %}" class="logo" >
-							<img  src="./img/main_logo.png" alt="">
 						<a class="logo" href="main.html">
 							<img src="./img/main_logo.png" alt="">
 						</a>
@@ -59,12 +57,12 @@
 							</div>
 							{% if user.is_authenticated %}
 							<a href="#" class="text-uppercase">환영합니다. {{ user.username }} 님</a> / <a href="javascript:{document.getElementById('logout').submit()}" class="text-uppercase">Join</a>
-							<form id="logout" method="POST" action="{% url 'logout' %}">
+							<form id="logout" method="POST" action="">
 								{% csrf_token %} <input type="hidden" />
 							</form>
 							{% else %}
 							<a href="{% url 'login' %}" class="text-uppercase">Login</a> / <a href="{% url 'signup' %}" class="text-uppercase">Join</a>
-						    {% endif %}
+						{% endif %}
 						</li>
 						<!-- /Account -->
 
@@ -91,7 +89,7 @@
 				<div class="category-nav"> <!--show-on-click-->
 					<span class="category-header">카테고리 <i class="fa fa-bars"></i></span>
 					<ul class="category-list">
-						<li><a href="cate_all.html">전체보기</a></li>
+						<li><a href="product_cate_all.html">전체보기</a></li>
 						<li><a href="#">일러스트</a></li>
 						<li><a href="#">캐릭터</a></li>
 						<li><a href="#">초상화</a></li>
@@ -139,7 +137,7 @@
 		<div class="container">
 			<!-- row -->
 			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center">
+				<div class="text-center">
 					<!-- footer logo -->
 					<div class="footer-logo">
 						<a class="logo" href="#">
@@ -150,7 +148,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center">
+				<div class="ext-center">
 					<!-- footer info -->
 					<div class="footer-info">
 						Made by. 7th Likelion Sejong Univ. Boramboram<br>
@@ -160,7 +158,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center">
+				<div class="text-center">
 					<!-- footer copyright -->
 					<div class="footer-copyright">
 						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
