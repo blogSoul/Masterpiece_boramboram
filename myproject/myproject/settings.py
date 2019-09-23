@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'Mainscreen',
     'servicecenter',
     'accounts.apps.AccountsConfig',
+    'mypage.apps.MypageConfig',
 ]
 
 MIDDLEWARE = [
