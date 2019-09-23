@@ -53,7 +53,21 @@
 				</div>
 				<div class="pull-right">
 					<ul class="header-btns">
-						<!-- Account -->
+						<!-- Account(is_authenticated) -->
+						{% if user.is_authenticated %}
+						<li class="header-account dropdown default-dropdown">
+							<div class="dropdown-toggle" role="button" aria-expanded="true">
+								<div class="header-btns-icon">
+									<i class="fa fa-user-o"></i>
+								</div>
+								<strong class="text-uppercase">{{user.get_username}}</strong>
+							</div>
+							 <a href="{% url 'login' %}" class="text-uppercase">mypage</a>  / <a href="{% url 'logout' %}" class="text-uppercase">Logout</a>
+						</li>
+						<!-- /Account(is_authenticated) -->
+
+						<!-- Account(is_not_authenticated) -->
+						{% else %}
 						<li class="header-account dropdown default-dropdown">
 							<div class="dropdown-toggle" role="button" aria-expanded="true">
 								<div class="header-btns-icon">
@@ -63,7 +77,9 @@
 							</div>
 							<a href="{% url 'login' %}" class="text-uppercase">Login</a> / <a href="{% url 'signup' %}" class="text-uppercase">Join</a>
 						</li>
-						<!-- /Account -->
+						<!-- /Account(is_not_authenticated) -->
+						{% endif %}
+
 
 						<!-- Mobile nav toggle-->
 						<li class="nav-toggle">

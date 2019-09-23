@@ -1,5 +1,5 @@
-from django.shortcuts import render
-
+from django.views.generic.edit import CreateView, DeleteView, UpdateView
+from django.shortcuts import render, redirect
 from .models import Photo
 
 def photo_list(request):
@@ -31,4 +31,4 @@ class PhotoDeleteView(DeleteView):
 class PhotoUpdateView(UpdateView):
     model =Photo
     fields=['photo', 'text']
-    template_name = '' #photo/update.html 같은 url입력
+    template_name = 'Mainscreen/commission.html' #photo/update.html 같은 url입력

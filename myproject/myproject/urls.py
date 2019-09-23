@@ -7,11 +7,12 @@ import servicecenter.views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', Mainscreen.views.home, name='home'),
-    path('', include('photo.urls')),
+    path('photo/', include('photo.urls')),
+    path('accounts/', include('accounts.urls')),
 
     path('servicecenter/', servicecenter.views.home, name='servicecenter'),
     path('servicecenter/<int:servicecenter_id>/', servicecenter.views.detail, name='detail'),
     path('servicecenter/write/', servicecenter.views.write, name='write'),
     path('servicecenter/create/', servicecenter.views.create, name='create'),
-    path('accounts/', include('accounts.urls')),
+    
 ]
