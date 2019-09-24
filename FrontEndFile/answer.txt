@@ -32,3 +32,9 @@ designer_select.html 완료
   designer_select.html => designer_detail.html
 모바일 최적화를 위해 footer section 및 col-md 클래스 등 전체 수정
 product_detail.html 완성
+
+
+
+2019.09.24 update
+모바일환경에 버튼이 안눌리는 오류 수정
+ㅠㅠㅠㅠㅠ

@@ -876,20 +876,8 @@ textarea.input {
   display: block;
 }
 
-.product.product-single .product-countdown {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  text-align: center;
-}
-
 .product.product-single .product-body {
   padding: 15px;
-}
-
-.product.product-single .product-name {
-  font-size: 20px;
 }
 
 .product.product-single .product-name {
@@ -998,9 +986,9 @@ textarea.input {
 }
 
 .designer.designer-single .designer-thumb>img {
-  padding:30px;
+  padding: 30px;
   width: 100%;
-  height: 250px;
+  height: 200px;
   border-radius: 50%;
 }
 
@@ -1258,6 +1246,12 @@ textarea.input {
 /*----------------------------*\
 	Product view
 \*----------------------------*/
+
+.product-view>img {
+  width:100%;
+  padding:0 7% 0 10%;
+}
+
 /*
 #product-main-view .slick-arrow {
   opacity: 0;
@@ -1265,11 +1259,6 @@ textarea.input {
 
 #product-main-view:hover .slick-arrow {
   opacity: 1;
-}
-
-#product-view {
-  margin-top: 10px;
-  margin-bottom: 15px;
 }
 
 #product-view .product-view.slick-slide {
@@ -1303,7 +1292,7 @@ textarea.input {
 }
 
 .product-description {
-  font-size:18px;
+  font-size:16px;
 }
 /*
 .product.product-details .product-rating {
@@ -1614,12 +1603,6 @@ textarea.input {
   margin: 15px 0px;
 }
 
-.footer .footer-header {
-  font-size: 18px;
-  text-transform: uppercase;
-  margin-bottom: 30px;
-}
-
 .footer-logo {
   margin-top: 10px;
   margin-bottom: 30px;
@@ -1711,19 +1694,6 @@ textarea.input {
 /*=========================================================
 	12 -> RESPONSIVE
 ===========================================================*/
-/*
-@media only screen and (max-width: 1200px) {
-  [class*='col-md'] {
-    width: 50%;
-  }
-  [class*='col-lm'] {
-    width: 100%;
-  }
-  [class*='col-sm'] {
-    width: 25%;
-  }
-}
-*/
 
 @media only screen and (max-width: 991px) {
   #home .home-wrap {
@@ -1789,6 +1759,9 @@ textarea.input {
   }
   .store-filter .pull-right {
     margin-top: 15px;
+  }
+  .footer-info, .footer-copyright {
+    font-size: 8px;
   }
   [class*='col-sm'] {
     width: 50%;
