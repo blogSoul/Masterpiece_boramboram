@@ -1261,7 +1261,7 @@ textarea.input {
 	Product details
 \*----------------------------*/
 
-.product.product-details .product-name {
+.product.product-details, .product-name {
   margin-top: 15px;
 }
 
@@ -1277,6 +1277,10 @@ textarea.input {
 	Product details choice
 \*----------------------------*/
 
+.product.product-details-choice {
+  padding: -10px;
+}
+
 .product.product-details-choice .product-body {
   padding: 10px 55px;
 }
@@ -1285,9 +1289,21 @@ textarea.input {
   margin-top: 15px;
 }
 
-.product.product-details-choice .product-descrip.product-description {
-  padding: -10px;
+.product-descrip-choice {
+  display:block;
+  font-size:20px;
 }
+
+.product-description-choice {
+  display:block;
+  font-size:16px;
+}
+
+.product-image-upload {
+  display: inlinek;
+  vertical-align:middle;
+}
+
 
 /*----------------------------*\
 	Product tab
@@ -1675,18 +1691,16 @@ textarea.input {
   #aside {
     margin-bottom: 60px;
   }
+
   .product-reviews {
     margin-bottom: 30px;
   }
-
   .product-name {
     font-size: 26px;
   }
-
   .product-descrip {
     font-size: 18px;
   }
-
   .product-description {
     font-size: 14px;
   }
@@ -1694,20 +1708,17 @@ textarea.input {
   #designer {
     padding:0px;
   }
-
   #designer-profile {
     float:none;
     width:auto;
     height:350px;
   }
-
   #designer-content {
     float:none;
     width:auto;
     height:auto;
     margin-left:0px;
   }
-
   #designer-profile .designer-image {
     padding-top:50px;
     padding-bottom:50px;
@@ -1716,7 +1727,6 @@ textarea.input {
   [class*='col-sm'] {
     width: 33%;
   }
-
   [class*='texture'] {
     margin:10%;
   }
@@ -1732,6 +1742,15 @@ textarea.input {
   .store-filter .pull-right {
     margin-top: 15px;
   }
+
+  .product-descrip-choice {
+    display:none;
+  }
+  
+  .product-description-choice {
+    display:none;
+  }
+  
   .footer-logo .logo>img{
     margin-top:20px;
     width: 80%;
@@ -1739,6 +1758,7 @@ textarea.input {
   .footer-info, .footer-copyright {
     font-size: 8px;
   }
+
   [class*='col-sm'] {
     width: 50%;
   }
