@@ -43,6 +43,7 @@ Table OF Contents
 8 > PRODUCT DETAILS PAGE
 ------ Product view
 ------ Product details
+------ Product details choice
 ------ Product tab
 9 > DESIGNER PAGE
 ------ Aside
@@ -200,7 +201,7 @@ hr {
 */
 
 .add-to-choice {
-  margin: 0px 3%;
+  margin: 0px 3% 0px 3%;
   border-radius:10px;
   width: 94%;
   border: 2px solid #9114fc;
@@ -329,6 +330,10 @@ textarea.input {
 
 .section-grey {
   background: #F6F7F8;
+}
+
+.section-white {
+  background: #ffffff;
 }
 
 .section-title {
@@ -1252,33 +1257,6 @@ textarea.input {
   padding:0 7% 0 10%;
 }
 
-/*
-#product-main-view .slick-arrow {
-  opacity: 0;
-}
-
-#product-main-view:hover .slick-arrow {
-  opacity: 1;
-}
-
-#product-view .product-view.slick-slide {
-  opacity: 0.2;
-}
-
-#product-view .product-view.slick-slide.slick-current {
-  opacity: 1;
-  -webkit-box-shadow: 0px 0px 0px 2px #9114fc inset;
-  box-shadow: 0px 0px 0px 2px #9114fc inset;
-}
-
-#product-view .product-view {
-  padding: 7.5px;
-}
-
-.product-view>img {
-  width: 100%;
-}
-*/
 /*----------------------------*\
 	Product details
 \*----------------------------*/
@@ -1294,27 +1272,22 @@ textarea.input {
 .product-description {
   font-size:16px;
 }
-/*
-.product.product-details .product-rating {
-  margin-right: 15px;
-  margin-bottom: 15px;
+
+/*----------------------------*\
+	Product details choice
+\*----------------------------*/
+
+.product.product-details-choice .product-body {
+  padding: 10px 55px;
 }
 
-.product.product-details .product-options {
-  padding-top: 30px;
-  margin-bottom: 15px;
-  border-top: 1px solid #DADADA;
+.product.product-details-choice .product-name {
   margin-top: 15px;
 }
 
-.product.product-details .qty-input {
-  display: inline-block;
+.product.product-details-choice .product-descrip.product-description {
+  padding: -10px;
 }
-
-.product.product-details .qty-input .input {
-  width: 90px;
-}
-*/
 
 /*----------------------------*\
 	Product tab
@@ -1746,7 +1719,6 @@ textarea.input {
 
   [class*='texture'] {
     margin:10%;
-    width: 90%;
   }
 }
 
@@ -1759,6 +1731,10 @@ textarea.input {
   }
   .store-filter .pull-right {
     margin-top: 15px;
+  }
+  .footer-logo .logo>img{
+    margin-top:20px;
+    width: 80%;
   }
   .footer-info, .footer-copyright {
     font-size: 8px;
