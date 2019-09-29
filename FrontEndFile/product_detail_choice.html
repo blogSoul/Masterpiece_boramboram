@@ -154,11 +154,29 @@
 							<br>
 						</div>
 					</div>
-					<div class="col-md-6">
-						<div class="product-image-upload">
-							<input type="file" id="up_files" name="up_files" onchange="handleFileSelect()"/>
-							<div id="list"></div>
+
+					<div class="col-md-6 ">
+						<div class="upload-choice">
+						<div class="title-choice">
+							<h2 class="title">의뢰받기</h2>
 						</div>
+						<div class="product-image-upload">
+							<div>
+								<table class="img_wrap">
+									<tr>
+										<td><img id="img"></td>
+									</tr>
+								</table>
+							</div>
+							<br>
+							<div>
+								<input type="file" id="input_img">
+							</div>
+						</div>
+						<div class="product-btn decice-choice">
+							<button class="primary-btn decide-choice" onclick="location.href='product_detail_choice.html'"><i class="fa fa-check"></i> &nbsp;제출하기 </button>
+						</div>
+					</div>
 					</div>
 				</div>
 				<!-- /Product Details -->

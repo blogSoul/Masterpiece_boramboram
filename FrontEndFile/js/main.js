@@ -92,6 +92,7 @@
   });
 
   /*
+  
   // PRODUCT DETAILS SLICK
   $('#product-main-view').slick({
     infinite: true,
@@ -115,6 +116,7 @@
   $('#product-main-view .product-view').zoom();
 
   */
+  
 
   // PRICE SLIDER
   var slider = document.getElementById('price-slider');
@@ -137,5 +139,4 @@
       }
     });
   }
-
 })(jQuery);
