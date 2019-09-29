@@ -47,9 +47,5 @@ product_detail.html 완성
 
 
 2019.09.29 update
-product_detail_choice.html 생성 (디자인 의뢰 받아들인 후 파일 업로드 하는 화면)
+product_detail_choice.html 완료 (디자인 의뢰 받아들인 후 파일 업로드 하는 화면)
 업로드 이미지 파일 미리보기 띄워줄 handleFileSelect.js 생성
-product_detail_choice.html 디자인 수정 필요
-ㄴ 버튼 수정
-   미리보기 화면 수정 (규격 정하기)
-   모바일 화면 및 조정
