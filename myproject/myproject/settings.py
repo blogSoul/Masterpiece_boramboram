@@ -27,8 +27,8 @@ ALLOWED_HOSTS = [
     '127.0.0.1',
     'localhost',
 ]
-
-
+# 추가 '앱이름,모델이름'
+AUTH_USER_MODEL='accounts.myuser'
 # Application definition
 
 INSTALLED_APPS = [

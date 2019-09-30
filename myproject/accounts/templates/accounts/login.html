@@ -8,7 +8,8 @@
 {% endif %}
 
 <p>로그인화면입니다.</p>
-<form method="POST" action="{% url 'login'%}">{% csrf_token %}
+<form method="POST" action="{% url 'login'%}">
+    {% csrf_token %}
     Username:
     <br>
     <input name="username" type="text" value="">

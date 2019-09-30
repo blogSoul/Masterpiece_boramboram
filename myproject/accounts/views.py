@@ -1,9 +1,24 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.models import User
+from django.contrib.auth.models import AbstractUser
 from django.contrib import auth
 # Create your views here.
+User = AbstractUser()
 
 def signup(request):
+    if request.method == 'POST':
+        if request.POST['password1'] == request.POST['password2']:
+            user = User.objects.create_user(
+                user_user=request.POST['username'], user_password=request.POST['password1'],
+                user_nickname=request.POST['nickname'],
+                user_email=request.POST['email'],
+                user_phone_number=request.POST['phonenumber']
+            )
+            auth.login(request, User)
+            return redirect('home')
+    return render(request, 'accounts/signup.html')
+# 왜 안되는거야 ... ㅜㅡㅜ
+    '''
     if request.method == 'POST':
         if request.POST['password1'] == request.POST['password2']:
             try:
@@ -11,9 +26,9 @@ def signup(request):
                 return render(request, 'account/signup.html', {'error': 'Username has already been taken'})
             except User.DoesNotExist:
                 user = User.objects.create_user(
-                    request.POST['username'], password=request.POST['password1'],
-                    nickname=request.POST['nickname'], email=request.POST['email'],
-                    phone_number=request.POST['phonenumber1'] + request.POST['phonenumber2'] + request.POST['phonenumber3'],
+                    username=request.POST['username'], password=request.POST['password1'],
+                    user_nickname=request.POST['nickname'], user_email=request.POST['email'],
+                    user_phone_number=request.POST['phonenumber'],
                 )
                 auth.login(request, user)
                 return redirect('home')
@@ -21,6 +36,7 @@ def signup(request):
             return render(request, 'accounts/signup.html', {'error': 'Passwords must match'})
     else:
         return render(request, 'accounts/signup.html')
+    '''
 
 def login(request):
     if request.method == 'POST':
