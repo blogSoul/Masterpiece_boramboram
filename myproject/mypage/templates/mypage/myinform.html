@@ -1,4 +1,11 @@
 {% extends 'base.html' %}
 {% block content %}
 <p>정보 확인 및 수정하는 곳입니다.</p>
+
+{% if user.is_authenticated %}
+<a href="#" class="text-uppercase">환영합니다. {{ user.username }} 님</a>
+<a href="javascript:{document.getElementById('logout').submit()}" class="text-uppercase">Join</a>
+{% else %}
+<a href="{% url 'login' %}" class="text-uppercase">Login</a> / <a href="{% url 'signup' %}" class="text-uppercase">Join</a>
+{% endif %}
 {% endblock %}
