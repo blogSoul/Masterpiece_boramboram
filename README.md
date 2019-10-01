@@ -36,10 +36,12 @@
 ![ex_screenshot](./img/모그리면돼.jpg)
 
 * 도메인 화면
-![ex_screenshot](./img/화면기획/보람보람-화면기획/슬라이드1.JPG)  *[세부화면기획](./img/화면기획/보람보람-화면기획)*
+![ex_screenshot](./img/화면기획/보람보람-화면기획/슬라이드1.JPG) *[세부화면기획](./img/화면기획/보람보람-화면기획)*
 
 
 * 개발일정
+
+
 ![ex_screenshot](./img/일정계획표.png)
 
 
