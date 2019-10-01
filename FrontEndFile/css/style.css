@@ -1791,9 +1791,11 @@ textarea.input {
   .product-descrip-choice {
     display:none;
   }
-  
   .product-description-choice {
     display:none;
+  }
+  .upload-choice {
+    margin: 0px 7%;
   }
   
   .footer-logo .logo>img{
