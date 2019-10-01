@@ -13,4 +13,5 @@ urlpatterns = [
     path('servicecenter/create/', servicecenter.views.create, name='create'),
     path('accounts/', include('accounts.urls')),
     path('mypage/', include('mypage.urls')),
+    path('designer/', include('designer.urls')),
 ]

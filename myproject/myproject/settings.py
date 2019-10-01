@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'servicecenter',
     'accounts.apps.AccountsConfig',
     'mypage.apps.MypageConfig',
+    'designer',
 ]
 
 MIDDLEWARE = [
