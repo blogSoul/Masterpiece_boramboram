@@ -9,7 +9,7 @@ def signup(request):
     if request.method == 'POST':
         if request.POST['password1'] == request.POST['password2']:
             user = User.objects.create_user(
-                user_user=request.POST['username'], user_password=request.POST['password1'],
+                request.POST['username'], password=request.POST['password1'],
                 user_nickname=request.POST['nickname'],
                 user_email=request.POST['email'],
                 user_phone_number=request.POST['phonenumber']
