@@ -24,7 +24,8 @@ def signup(request):
             else:
                 return redirect('home')
     return render(request, 'accounts/signup.html')
-# 왜 안되는거야 ... ㅜㅡㅜ
+    # 왜 안되는거야 ... ㅜㅡㅜ
+    # 이 부분은 아이디 중복 기능이 없어서 주석처리해두었습니다.
     '''
     if request.method == 'POST':
         if request.POST['password1'] == request.POST['password2']:
@@ -52,6 +53,7 @@ def signup(request):
     else:
         return render(request, 'accounts/signup.html')
     # try 구문으론 odject의 doesnotexit를 읽을 수 없다.
+    # auth는 user 한명에게만 해당된다.
 
 
 def login(request):
