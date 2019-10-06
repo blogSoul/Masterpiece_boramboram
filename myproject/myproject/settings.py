@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'accounts.apps.AccountsConfig',
     'mypage.apps.MypageConfig',
     'designer',
+    'request',
 ]
 
 MIDDLEWARE = [
