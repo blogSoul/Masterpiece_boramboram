@@ -1,9 +1,9 @@
 from django.shortcuts import render
-
-# Create your views here.
+from .models import Art
 
 def designerhome(request):
-    return render(request, 'designer/designerhome.html')
+    art = Art.objects
+    return render(request, 'designer/designerhome.html', {'Art': art})
 
 def detail(request):
     return render(request, 'designer/detail.html')

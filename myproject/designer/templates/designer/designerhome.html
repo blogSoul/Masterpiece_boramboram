@@ -1,4 +1,16 @@
 {% extends 'base.html' %}
 {% block content %}
-<p>디자이너들을 볼 수 있는 화면입니다..</p>
+<p>디자이너들을 볼 수 있는 화면입니다!</p>
+<br>
+<br>
+<form>
+{% for element in art.all %}
+<br>
+{{ element.title }}
+<br>
+    <img class="card-img-top" src="{{ element.image.url }}" alt=" Card image cap">
+<br>
+{{ element.categroy }}
+</form>
+{% endfor %}
 {% endblock %}

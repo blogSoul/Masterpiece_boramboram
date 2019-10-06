@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth.models import User
 from django.contrib import auth
 from django.contrib.auth import get_user_model
-
+from django.views.generic.edit import CreateView,UpdateView
 # Create your views here.
 
 User = get_user_model()
@@ -74,3 +74,16 @@ def logout(request):
         auth.logout(request)
         return redirect('home')
     return render(request, 'accounts/signup.html')
+
+class PhotoUploadView(CreateView):
+    model = User
+    fields = ['photo','text']
+    template_name = 'accounts/signup.html'
+
+    def form_valid(self, form):
+        form.instance.author_id = self.request.user.id
+        if form.is_valid():
+            form.instance.save()
+            return redirect('/')
+        else:
+            return self.render_to_response({'form':form})
