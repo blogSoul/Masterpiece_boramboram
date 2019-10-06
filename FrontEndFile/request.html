@@ -5,8 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-
+	
 	<title>모그리면돼?</title>
 
 	<!-- Google font -->
@@ -58,7 +57,7 @@
 							<a href="login.html" class="text-uppercase">Login</a> / <a href="signup.html" class="text-uppercase">Join</a>
 						</li>
 						<!-- /Account -->
-	
+
 						<!-- Mobile nav toggle-->
 						<li class="nav-toggle">
 							<button class="nav-toggle-btn mobile-btn icon-btn"><i class="fa fa-bars"></i></button>
@@ -72,7 +71,7 @@
 		<!-- container -->
 	</header>
 	<!-- /HEADER -->
-	
+
 	<!-- NAVIGATION -->
 	<div id="navigation">
 		<!-- container -->
@@ -118,115 +117,71 @@
 	<!-- /NAVIGATION -->
 
 	<!-- section -->
-	<div class="section-desiger">
+	<div class="section">
 		<!-- container -->
 		<div class="container">
 			<!-- row -->
 			<div class="row">
-				<!-- DESIGNER -->
-				<div id="designer">
-					<!-- DESIGNER PROFILE -->
-					<div id="designer-profile">
-						<div class="text-center">
-							<div class="designer-image">
-								<img src="./img/design01.jpg" alt="">
-							</div>
-							<div class="designer-intro">
-								<h2 class="designer-name">
-									<img src="./img/left_quote.png" alt="">
-									디자이너이름1
-									<img src="./img/right_quote.png" alt="">
-								</h2>
-								<h4 class="designer-info">디자이너소개111</h4>
-								<a class="icon-facebook" href="#"><i class="fa fa-twitter"></i></a>
-								<a class="icon-facebook" href="#"><i class="fa fa-facebook"></i></a>
-								<a class="icon-facebook" href="#"><i class="fa fa-instagram"></i></a>
-							</div>
-						</div>
+			</div>
+			<!-- /row -->
+		</div>
+		<!-- /container -->
+	</div>
+	<!-- /section -->
+
+
+	<!-- section -->
+	<div class="section">
+		<!-- container -->
+		<div class="container">
+			<!-- row -->
+			<div class="row">
+				<!-- section-title -->
+				<div class="col-md-12 col-lm-12">
+					<div class="section-title">
+						<h2 class="title">의뢰하기</h2>
 					</div>
-					<!-- /DESIGNER PROFILE -->
-
-					<!-- DESIGNER CONTENT -->
-					<div id="designer-content">
-						<br><br><br><br><br>
-						<!-- Designer Single -->
-						<div class="col-md-4 col-sm-4 col-xs-6 text-center">
-							<div class="designer-single">
-								<div class="designer-thumb">
-									<img src="./img/design01.jpg" alt="">
-								</div>
-							</div>
-						</div>
-						<!-- /Designer Single -->
-
-						<!-- Designer Single -->
-						<div class="col-md-4 col-sm-4 col-xs-6 text-center">
-							<div class="designer-single">
-								<div class="designer-thumb">
-									<img src="./img/design02.jpg" alt="">
-								</div>
-							</div>
-						</div>
-						<!-- /Designer Single -->
-
-						<!-- Designer Single -->
-						<div class="col-md-4 col-sm-4 col-xs-6 text-center">
-							<div class="designer-single">
-								<div class="designer-thumb">
-									<img src="./img/design03.jpg" alt="">
-								</div>
-							</div>
-						</div>
-						<!-- /Designer Single -->
-
-						<!-- Designer Single -->
-						<div class="col-md-4 col-sm-4 col-xs-6 text-center">
-							<div class="designer-single">
-								<div class="designer-thumb">
-									<img src="./img/design04.jpg" alt="">
-								</div>
-							</div>
-						</div>
-						<!-- /Designer Single -->
-	
-						<!-- Designer Single -->
-						<div class="col-md-4 col-sm-4 col-xs-6 text-center">
-							<div class="designer-single">
-								<div class="designer-thumb">
-									<img src="./img/design05.jpg" alt="">
-								</div>
-							</div>
-						</div>
-						<!-- /Designer Single -->
-	
-						<!-- Designer Single -->
-						<div class="col-md-4 col-sm-4 col-xs-6 text-center">
-							<div class="designer-single">
-								<div class="designer-thumb">
-									<img src="./img/design06.jpg" alt="">
-								</div>
-							</div>
-						</div>
-						<!-- /Designer Single -->
-
-						<!-- enter -->
-						<div class="col-md-4 col-sm-4 col-xs-6">
-							<!-- container -->
-							<div class="container">
-								<!-- row -->
-								<div class="row">
-									<br><br><br><br>
-								</div>
-								<!-- /row -->
-							</div>
-							<!-- /container -->
-						</div>
-						<!-- enter -->				
-				
-					</div>
-					<!-- /DESIGNER CONTENT -->
 				</div>
-				<!-- /DESIGNER -->
+				<!-- /section-title -->
+				
+				<!--  Request Details -->
+				<div class="col-md-12 col-lm-12 request">
+					<form method="POST" name="image-request-form" action="">
+						<div class="request-form">
+							<label>
+								<span>카테고리</span>
+								<select name="category" size="1">
+									<option>일러스트</option>
+									<option>캐릭터</option>
+									<option>초상화</option>
+									<option>캘리그래피</option>
+									<option>웹툰/만화</option>
+									<option>영상</option>
+									<option>기타</option>
+								</select><br>
+							</label>
+							<label>
+								<span>제목</span><input name="title" type="text" value=""><br>
+							</label>
+							<label>
+								<span>상세설명</span><textarea name="detail" rows="10"value=""></textarea><br>
+							</label>
+							<label>
+								<span>이미지</span><input name="image" type="file"><br>
+							</label>
+							<label>
+								<span>모집기간</span><input name="date" type="date"> 까지<br>
+							</label>
+							<label>
+								<span>의뢰금액</span><input name="cost" type="number" min="0" max="10000000" step="1000"> 원<br>
+							</label>
+						</div>
+						<div class="product-btn section">
+							<button class="primary-btn request-upload"><i class="fa fa-check"></i> &nbsp;의뢰하기 </button>
+						</div>
+					</form>
+				</div>
+				<!-- /Request Details -->
 			</div>
 			<!-- /row -->
 		</div>
@@ -234,6 +189,7 @@
 	</div>
 	<!-- /section -->
 	
+
 
 	<!-- FOOTER -->
 	<footer id="footer" class="section section-grey">

@@ -1,15 +1,12 @@
 /*
-Template Name: E-SHOP HTML E-Commerce Template
+Original Template Name: E-SHOP HTML E-Commerce Template
 Author: yaminncco
 
-Colors:
-	Body 		  : #4A4E5A
-	Headers 	: #30323A
-	Primary 	: 9114fc
-	Dark 		  :	#30323A
-	Grey 		  : #DADADA #F6F7F8
 
-Fonts: Hind
+Project Name: Mo-drawing (Boramboram)
+Editer: sryung1225 (https://github.com/sryung1225)
+
+
 
 Table OF Contents
 ------------------------------------
@@ -35,24 +32,33 @@ Table OF Contents
 ------ Single product
 ------ Widget product
 ------ Product slick
-6-2 > DESIGNER
+7 > DESIGNER
 ------ Single designer
-7 > PRODUCTS PAGE
------- Aside
------- Store
 8 > PRODUCT DETAILS PAGE
 ------ Product view
 ------ Product details
 ------ Product details choice
 ------ Product tab
-9 > DESIGNER PAGE
+9 > DESIGNER DETAILS PAGE
 ------ Aside
-9 > CHECKOUT PAGE
-10 > FOOTER
-11 > SLICK
+10 > REQUEST
+------ Requset form
+11 > ACCOUNT
+------ Login form
+------ Sign up form
+12 > MYPAGE
+------ My information
+------ My request lists
+------ My design lists
+13 > SERVICE CENTER
+------ Service center view
+------ Service center details
+------ Service center write
+14 > FOOTER
+15 > SLICK
 ------ Arrows
 ------ Dots
-12 > RESPONSIVE
+16 > RESPONSIVE
 ------------------------------------*/
 
 /*=========================================================
@@ -606,55 +612,9 @@ textarea.input {
   transform: translateX(-50%) translateY(0px);
 }
 
-.dropdown.default-dropdown>.custom-menu>li>a {
+.dropdown.default-dropdown.open>.custom-menu>li>a {
   display: block;
-  padding: 10px 0px;
-  text-transform: uppercase;
-}
-
-/*-- Mega Dropdown --*/
-
-.dropdown.mega-dropdown.full-width {
-  position: static !important;
-}
-
-.dropdown.mega-dropdown>.custom-menu {
-  border-top: 2px solid #9114fc;
-  left: 0;
-  -webkit-transform: translate(0px, 15px);
-  -ms-transform: translate(0px, 15px);
-  transform: translate(0px, 15px);
-  width: auto;
-  min-width: 750px;
-  max-width: 100%;
-}
-
-.dropdown.mega-dropdown.full-width>.custom-menu {
-  width: 100%;
-}
-
-.dropdown.mega-dropdown.open>.custom-menu {
-  -webkit-transform: translate(0px, 0px);
-  -ms-transform: translate(0px, 0px);
-  transform: translate(0px, 0px);
-}
-
-/*-- Side Dropdown --*/
-
-.dropdown.side-dropdown>.custom-menu {
-  border-left: 2px solid #9114fc;
-  left: 100%;
-  top: 0;
-  width: 750px;
-  -webkit-transform: translate(15px, 0px);
-  -ms-transform: translate(15px, 0px);
-  transform: translate(15px, 0px);
-}
-
-.dropdown.side-dropdown.open>.custom-menu {
-  -webkit-transform: translate(0px, 0px);
-  -ms-transform: translate(0px, 0px);
-  transform: translate(0px, 0px);
+  padding: 15px;
 }
 
 /*----------------------------*\
@@ -1056,203 +1016,6 @@ textarea.input {
   font-size: 14px;
 }
 
-
-/*=========================================================
-	07 -> PRODUCTS PAGE
-===========================================================*/
-
-/*----------------------------*\
-	Aside
-\*----------------------------*/
-
-#aside .aside {
-  margin-bottom: 30px;
-}
-
-#aside .aside:last-child {
-  margin-bottom: 0px;
-}
-
-.aside .aside-title {
-  position: relative;
-  border-bottom: 1px solid #DADADA;
-  text-transform: uppercase;
-  padding-bottom: 15px;
-  margin-bottom: 30px;
-  margin-top: 15px;
-  line-height: 24px;
-  font-size: 18px;
-}
-
-.aside .aside-title:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -1.5px;
-  height: 3px;
-  width: 60px;
-  background-color: #9114fc;
-}
-
-/*-- Filter list --*/
-
-.filter-list {
-  margin-bottom: 15px;
-}
-
-.filter-list>li {
-  display: inline-block;
-  margin-right: 2px;
-  margin-bottom: 6px;
-}
-
-.filter-list>li:last-child {
-  margin-right: 0px;
-}
-
-.filter-list li a {
-  position: relative;
-  padding: 0px 5px 0px 20px;
-}
-
-.filter-list li a:before {
-  content: "\f00d";
-  font-family: FontAwesome;
-  position: absolute;
-  left: 4px;
-  top: 5px;
-  line-height: 12px;
-  font-size: 9px;
-  color: #FFF;
-  background: #30323A;
-  width: 12px;
-  text-align: center;
-  border-radius: 50%;
-  height: 12px;
-}
-
-/*-- Price Filter --*/
-
-#price-slider {
-  margin: 60px 0px 50px;
-}
-
-.noUi-target {
-  background-color: #DADADA;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  border: none;
-  border-radius: 0px;
-}
-
-.noUi-connect {
-  background-color: #9114fc;
-}
-
-.noUi-horizontal {
-  height: 4px;
-}
-
-.noUi-horizontal .noUi-handle {
-  width: 12px;
-  height: 12px;
-  left: -6px;
-  top: -4px;
-  border: none;
-  background: #30323A;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  border-radius: 0px;
-}
-
-.noUi-handle:before, .noUi-handle:after {
-  display: none;
-}
-
-.noUi-tooltip {
-  border: none;
-  color: #FFF;
-  background: #30323A;
-  border-radius: 0px;
-}
-
-/*----------------------------*\
-	Store
-\*----------------------------*/
-
-#store {
-  margin-top: 15px;
-  padding-top: 30px;
-  border-top: 1px solid #DADADA;
-  margin-bottom: 15px;
-  padding-bottom: 30px;
-  border-bottom: 1px solid #DADADA;
-}
-
-/*-- store filter --*/
-
-.row-filter {
-  display: inline-block;
-  vertical-align: top;
-}
-
-.row-filter>a {
-  display: inline-block;
-  height: 40px;
-  width: 40px;
-  line-height: 40px;
-  text-align: center;
-  color: #FFF;
-  background-color: #30323A;
-  -webkit-transition: 0.3s all;
-  transition: 0.3s all;
-}
-
-.row-filter>a:hover {
-  opacity: 0.9;
-}
-
-.row-filter>a.active {
-  background-color: #9114fc;
-}
-
-.sort-filter {
-  display: inline-block;
-  margin-left: 15px;
-}
-
-.sort-filter select.input {
-  width: 120px;
-}
-
-.page-filter select.input {
-  width: 90px;
-}
-
-.page-filter {
-  display: inline-block;
-}
-
-.store-pages {
-  display: inline-block;
-  margin-left: 15px;
-}
-
-.store-pages li {
-  display: inline-block;
-  margin-right: 6px;
-}
-
-.store-pages li a {
-  display: block;
-  min-width: 10px;
-  text-align: center;
-}
-
-.store-pages li.active {
-  color: #9114fc;
-}
-
 /*=========================================================
 	08 -> PRODUCT DETAILS PAGE
 ===========================================================*/
@@ -1396,104 +1159,9 @@ textarea.input {
   background-color: #9114fc;
 }
 
-/*-- reviews --*/
-
-.single-review {
-  margin-bottom: 30px;
-}
-
-.single-review .review-heading>div {
-  display: inline-block;
-}
-
-.single-review .review-heading>div+div {
-  margin-left: 10px;
-}
-
-.single-review .review-rating {
-  display: inline-block;
-}
-
-.single-review .review-rating>i {
-  color: #FFB656;
-}
-
-.single-review .review-rating>i.empty {
-  color: #DADADA;
-}
-
-.single-review .review-body {
-  margin-top: 10px;
-}
-
-.reviews-pages li {
-  display: inline-block;
-  margin-right: 6px;
-}
-
-.reviews-pages li a {
-  display: block;
-  min-width: 10px;
-  text-align: center;
-}
-
-.reviews-pages li.active {
-  color: #9114fc;
-}
-
-/*-- review form --*/
-
-.review-form textarea.input {
-  height: 90px;
-}
-
-.review-form .input-rating .stars {
-  display: inline-block;
-  vertical-align: top;
-}
-
-.review-form .input-rating .stars input[type="radio"] {
-  display: none;
-}
-
-.review-form .input-rating .stars>label {
-  float: right;
-  cursor: pointer;
-  padding: 0px 3px;
-  margin: 0px;
-  -webkit-transition: 0.3s all;
-  transition: 0.3s all;
-}
-
-.review-form .input-rating .stars>label:hover, .review-form .input-rating .stars>label:hover~label {
-  -webkit-transform: scale(1.5);
-  -ms-transform: scale(1.5);
-  transform: scale(1.5);
-}
-
-.review-form .input-rating .stars>label:before {
-  content: "\f006";
-  font-family: FontAwesome;
-  font-style: normal;
-  font-weight: normal;
-  color: #DADADA;
-  font-size: 14px;
-  -webkit-transition: 0.3s all;
-  transition: 0.3s all;
-}
-
-.review-form .input-rating .stars>label:hover:before, .review-form .input-rating .stars>label:hover~label:before {
-  content: "\f005";
-  color: #FFB656;
-}
-
-.review-form .input-rating .stars>input:checked label:before, .review-form .input-rating .stars>input:checked~label:before {
-  content: "\f005";
-  color: #FFB656;
-}
 
 /*=========================================================
-	09 -> DESIGNER PAGE
+	09 -> DESIGNER DETAILS PAGE
 ===========================================================*/
 
 
@@ -1561,76 +1229,122 @@ textarea.input {
 }
 
 
-
 /*=========================================================
-	09 -> CHECKOUT PAGE
+	10 -> REQUEST
 ===========================================================*/
 
-.shiping-methods {
-  margin-bottom: 30px;
+/*----------------------------*\
+	Requset form
+\*----------------------------*/
+
+.request-form {
+  margin: 15px 40px 0px 40px;
 }
 
-/*-- shopping cart table --*/
-
-.shopping-cart-table>tbody>tr>td, .shopping-cart-table>tbody>tr>th, .shopping-cart-table>tfoot>tr>td, .shopping-cart-table>tfoot>tr>th, .shopping-cart-table>thead>tr>td, .shopping-cart-table>thead>tr>th {
-  padding: 15px 0px;
-  vertical-align: middle;
-  border-top: 1px solid #DADADA;
+.request-form > label {
+  display: block;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: normal;
 }
 
-.shopping-cart-table>thead>tr>th {
-  color: #30323A;
-  text-transform: uppercase;
-  border-bottom: 1px solid #DADADA;
-}
-
-.shopping-cart-table>tbody>tr:last-child>td {
-  border-bottom: 1px solid #DADADA;
-}
-
-.shopping-cart-table>tfoot>tr>td, .shopping-cart-table>tfoot>tr>th {
-  color: #30323A;
-  border-top: 0px
-}
-
-.shopping-cart-table>tfoot>tr>td:not(.empty), .shopping-cart-table>tfoot>tr>th:not(.empty) {
-  padding: 15px;
-  background-color: #F6F7F8;
-  border: 1px solid #DADADA;
-}
-
-.shopping-cart-table>tbody>tr>.details>a {
+.request-form > label span {
+  float: left;
+  width: 100px;
+  text-align: right;
+  padding: 5px;
+  padding-right: 15px;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: bold;
 }
 
-.shopping-cart-table>tbody>tr>.thumb>img {
-  width: 60px;
+.request-form input{
+  padding: 5px;
 }
 
-.shopping-cart-table>tbody>tr>.qty .input {
-  width: 90px;
+.request-form input[name=title] {
+  width: 50%;
 }
 
-.shopping-cart-table>tbody>tr>.price {
-  font-size: 18px;
+.request-form textarea{
+  padding: 10px;
+  width: 80%;
+  overflow: scroll;
+  overflow-x: hidden;
 }
 
-.shopping-cart-table>tbody>tr>.total {
-  font-size: 18px;
+.request-form input[type=file] {
+  padding-left:0px;
 }
 
-.shopping-cart-table>tfoot>tr>.sub-total {
-  font-size: 18px;
+.request-form input:hover, textarea:hover {
+  background: #DADADA;
 }
 
-.shopping-cart-table>tfoot>tr>.total {
-  font-size: 24px;
+.request-form input:focus, textarea:focus {
+  background: #DADADA;
+}
+
+.request-form input[type=file]:hover, input[type=file]:focus {
+  background:#ffffff;
+}
+
+.request-upload {
+  margin-top:30px;
+  border-radius:10px;
+  width: 100%;
+  border: 2px solid #9114fc;
+  background-color: #FFF;
   color: #9114fc;
 }
 
+
 /*=========================================================
-	10 -> FOOTER
+	11 -> ACCOUNT
+===========================================================*/
+
+/*----------------------------*\
+	Login form
+\*----------------------------*/
+
+/*----------------------------*\
+	Sign up form
+\*----------------------------*/
+
+/*=========================================================
+	12 -> MYPAGE
+===========================================================*/
+
+/*----------------------------*\
+	My information
+\*----------------------------*/
+
+/*----------------------------*\
+	My request lists
+\*----------------------------*/
+
+/*----------------------------*\
+	My design lists
+\*----------------------------*/
+
+/*=========================================================
+	13 -> SERVICE CENTER
+===========================================================*/
+
+/*----------------------------*\
+	Service center view
+\*----------------------------*/
+
+/*----------------------------*\
+	Service center details
+\*----------------------------*/
+
+/*----------------------------*\
+	Service center write
+\*----------------------------*/
+
+/*=========================================================
+	14 -> FOOTER
 ===========================================================*/
 
 .footer {
@@ -1662,7 +1376,7 @@ textarea.input {
 }
 
 /*=========================================================
-	11 -> SLICK
+	15 -> SLICK
 ===========================================================*/
 
 /*----------------------------*\
@@ -1726,7 +1440,7 @@ textarea.input {
 }
 
 /*=========================================================
-	12 -> RESPONSIVE
+	16 -> RESPONSIVE
 ===========================================================*/
 
 @media only screen and (max-width: 991px) {
@@ -1786,6 +1500,26 @@ textarea.input {
   }
   .store-filter .pull-right {
     margin-top: 15px;
+  }
+
+  .request-form {
+    margin: 15px 20px 0px 20px;
+  }
+  .request-form > label {
+    font-size: 14px;
+    font-weight: normal;
+  }
+  .request-form > label span {
+    width: auto;
+    text-align:left;font-size: 14px;
+    font-weight: bold;
+    padding:0px 5px 0px 0px;
+  }
+  .request-form input[name=title]{
+    width: auto;
+  }
+  .request-form textarea {
+    width: 100%;
   }
 
   .product-descrip-choice {
