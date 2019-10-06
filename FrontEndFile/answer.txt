@@ -49,3 +49,10 @@ product_detail.html 완성
 2019.09.29 update
 product_detail_choice.html 완료 (디자인 의뢰 받아들인 후 파일 업로드 하는 화면)
 업로드 이미지 파일 미리보기 띄워줄 handleFileSelect.js 생성
+
+
+
+2019.10.06 update
+request.html 완성 (디자인 의뢰하기 하면)
+링크수정으로 인해 전체 html에 조금씩 변화가 있음
+단, product_detail_choice.html과 request.html 하단에 사용된 button 클래스들을 모두 input type="submit" 클래스로 수정해야할 것 같아서 style.css 파일을 비롯해 변화가 생길 수 있음 (디자인은 최대한 그대로 유지할 것)

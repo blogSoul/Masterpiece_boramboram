@@ -23,7 +23,7 @@ function handleFileSelect()
 var sel_file;
 
 $(document).ready(function() {
-  $("#input_img").on("change", handleImgFileSelect);
+  $("#input-img").on("change", handleImgFileSelect);
 });
 
 function handleImgFileSelect(e){

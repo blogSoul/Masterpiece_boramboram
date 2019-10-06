@@ -130,38 +130,52 @@
 		<div class="container">
 			<!-- row -->
 			<div class="row">
-				<!--  Product Details -->
-				<div class="product product-details clearfix">
-					<div class="col-md-6 text-center">
-						<div id="product-main-view">
-							<div class="product-view">
-								<img src="img/draw01_square.jpg" alt="">
-							</div>
-						</div>
+				<!-- section-title -->
+				<div class="col-md-12 col-lm-12">
+					<div class="section-title">
+						<h2 class="title">의뢰하기</h2>
 					</div>
-					<div class="col-md-6">
-						<div class="product-body texture">
-							<br>
-							<div class="product-label">
-								<span>캐릭터 일러스트</span>
-							</div>
-							<h2 class="product-name">남녀 누워있는 모습 그려주세요ㅜㅜ</h2>
-							<br><br>
-							<h4 class="product-descrip">상세 설명</h4>
-							<p><span class="product-description">남자는 베개를 베고 침대에 누워있고 그 위로 여자가 있어요..<br>
-								둘이 서로를 쳐다보고 있고 입술이 닿을 듯한 모습을 연출하고 싶어요!<br>
-								남자의 왼쪽 손이 여자의 머리를 감싸듯이 하면 좋을 것 같아요<br>
-								***여자 단발머리*** 중요합니다! 잘 부탁드려요ㅜㅜㅜ
-							</span></p>
-							<br>
-							<div class="product-btns">
-								<button class="primary-btn add-to-choice" onclick="location.href='product_detail_choice.html'"><i class="fa fa-paint-brush"></i> &nbsp;의뢰받기 </button>
-							</div>
-						</div>
-					</div>
-
 				</div>
-				<!-- /Product Details -->
+				<!-- /section-title -->
+				
+				<!--  Request Details -->
+				<div class="col-md-12 col-lm-12 request">
+					<form method="POST" name="image-request-form" action="">
+						<div class="request-form">
+							<label>
+								<span>카테고리</span>
+								<select name="category" size="1">
+									<option>일러스트</option>
+									<option>캐릭터</option>
+									<option>초상화</option>
+									<option>캘리그래피</option>
+									<option>웹툰/만화</option>
+									<option>영상</option>
+									<option>기타</option>
+								</select><br>
+							</label>
+							<label>
+								<span>제목</span><input name="title" type="text" value=""><br>
+							</label>
+							<label>
+								<span>상세설명</span><textarea name="detail" rows="10"value=""></textarea><br>
+							</label>
+							<label>
+								<span>이미지</span><input name="image" type="file"><br>
+							</label>
+							<label>
+								<span>모집기간</span><input name="date" type="date"> 까지<br>
+							</label>
+							<label>
+								<span>의뢰금액</span><input name="cost" type="number" min="0" max="10000000" step="1000"> 원<br>
+							</label>
+						</div>
+						<div class="product-btn section">
+							<button class="primary-btn request-upload"><i class="fa fa-check"></i> &nbsp;의뢰하기 </button>
+						</div>
+					</form>
+				</div>
+				<!-- /Request Details -->
 			</div>
 			<!-- /row -->
 		</div>
