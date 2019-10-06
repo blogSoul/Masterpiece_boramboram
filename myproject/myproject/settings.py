@@ -27,8 +27,8 @@ ALLOWED_HOSTS = [
     '127.0.0.1',
     'localhost',
 ]
-
-
+# 추가 '앱이름,모델이름'
+AUTH_USER_MODEL='accounts.myuser'
 # Application definition
 
 INSTALLED_APPS = [
@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'servicecenter',
     'accounts.apps.AccountsConfig',
     'photo',
+    'mypage.apps.MypageConfig',
+    'designer',
 ]
 
 MIDDLEWARE = [
@@ -128,3 +130,11 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, '../FrontEndFile')]
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT=os.path.join(BASE_DIR, 'media')
+# 이메일 설정 환경 변수
+#EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+#EMAIL_HOST = "smtp.gmail.com"
+#EMAIL_HOST_USER = 'username@gmail.com'
+#EMAIL_HOST_PASSWORD = 'your-gmail-password'
+#EMAIL_PORT = 587
+#EMAIL_USE_TLS = True
+#DEFAULT_FROM_EMAIL = EMAIL_HOST_USER

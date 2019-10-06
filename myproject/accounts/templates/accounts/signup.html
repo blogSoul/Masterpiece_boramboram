@@ -2,12 +2,6 @@
 
 {% block content %}
 
-{% if error %}
-{{ error }}
-<br>
-<br>
-{% endif %}
-
 <h1>Sign Up!</h1>
 
 <form method="POST" action="{% url 'signup'%}">
@@ -24,20 +18,18 @@
     <br>
     <input name="password2" type="password" value="">
     <br>
-    Nickname:
+    realname:
     <br>
-    <input name="nickname"  type="text" value="">
+    <input name="realname"  type="text" value="">
     <br>
     Phone number:
     <br>
-    <input name="phonenumber1"  type="phonenumber1" value=""> - <input name="phonenumber2"  type="phonenumber2" value=""> - <input name="phonenumber3"  type="phonenumber3" value="">
+    <input name="phonenumber"  type="text" value="">
     <br>
     Email:
     <br>
-    <input name="email"  type="text" value="">
+    <input name="email"  type="email" value="">
     <br>
-</form>
-<form method="POST" action="{% url 'signup'%}">
     <br>
     <input class="btn btn-primary" type="submit" value="Sign Up!">
 </form>

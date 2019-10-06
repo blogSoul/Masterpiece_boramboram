@@ -1,12 +1,13 @@
 from django.db import models
+from django.contrib.auth.models import AbstractUser
 
 # Create your models here.
-class webuser(models.Model):
-    user_id = models.CharField(max_length=15)
-    user_pw = models.CharField(max_length=15)
-    user_nk = models.CharField(max_length=15)
-    user_em = models.CharField(max_length=20)
+class myuser(AbstractUser):
+    user_realname = models.CharField(max_length=15)
+    user_phone_number = models.CharField(max_length=15)
+    isdesigner = models.BooleanField(default=False)
+    is_art = models.BooleanField(default=False)
 
-    user_ph1 = models.CharField(max_length=3)
-    user_ph2 = models.CharField(max_length=4)
-    user_ph3 = models.CharField(max_length=4)
+
+#Art 부분은 조금 더 논의하고 만들겠습니다.
+
