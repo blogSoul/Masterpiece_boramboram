@@ -18,3 +18,6 @@ class Art(models.Model):
 
     who_make = models.CharField(max_length=30)
     #현재 로그인되어있는 사용자의 id를 저장할 예정입니다.
+
+    def summary(self):
+        return self.body[:100]

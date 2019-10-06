@@ -4,13 +4,16 @@
 <br>
 <br>
 <form>
-{% for element in art.all %}
+{% for element in Arts.all %}
 <br>
-{{ element.title }}
+    <form>
+    <p>{{ element.title }}</p>
 <br>
-    <img class="card-img-top" src="{{ element.image.url }}" alt=" Card image cap">
+    <img src="{{ element.image.url }}">
 <br>
-{{ element.categroy }}
+    <p>{{ element.description }}</p>
+        <a href="{% url 'detail' element.id %}">detail로 가는 버튼!</a>
+    </form>
 </form>
 {% endfor %}
 {% endblock %}
