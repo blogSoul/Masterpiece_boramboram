@@ -1,3 +1,4 @@
+from django.conf import settings
 from django.db import models
 from django.contrib.auth.models import User
 from django.urls import reverse
@@ -15,7 +16,7 @@ def user_path(instance, filename): #파라미터 instace는 Photo모델을 의�
 '''
 
 class Photo(models.Model):
-    author = models.ForeignKey(User, on_delete=models.CASCADE, related_name='user_photos') 
+    author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='user_photos') 
     category= models.CharField(max_length=20)
     title = models.CharField(max_length=200)
     photo = models.ImageField(upload_to='photos/', default = 'photos/no_image.png') # upload 된 장소 글쓴이 폴더에 가는거 이상??????? 
