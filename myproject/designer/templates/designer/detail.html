@@ -1,4 +1,14 @@
 {% extends 'base.html' %}
 {% block content %}
 <p>디자이너 상세정보를 볼 수 있는 화면입니다..</p>
+<br>
+<form>
+    <img src="{{ element.image.url }}">
+    <p>{{ element.title }}</p>
+    <p>{{ element.description }}</p>
+    <p>{{ element.created_at_time }}</p>
+    <p>{{ element.category }}</p>
+    <p>{{ element.who_make }}</p>
+    <a href="{% url 'designerhome' %}">돌아가기</a>
+</form>
 {% endblock %}

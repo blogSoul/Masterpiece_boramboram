@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% block content %}
+
+{% if error %}
+{{ error }}
+<br>
+<br>
+{% endif %}
+
+<p>의뢰신청을 할 수 있는 화면입니다..</p>
+<form method="POST" action="{% url 'requesthome'%}">
+    <select id= "category" name="category" size="1">
+        <option value="illustration">일러스트</option>
+        <option value="character">캐릭터</option>
+        <option value="portrait">초상화</option>
+        <option value="calligraphy">캘리그래피</option>
+        <option value="webtoon">웹툰/만화</option>
+        <option value="video">영상</option>
+        <option value="other">기타</option>
+    </select>
+    <br>
+    {% csrf_token %}
+    제목:
+    <br>
+    <input name="title" type="text" value="">
+    <br>
+    상세설명:
+    <br>
+    <input name="description" type="text" value="">
+    <br>
+    이미지:
+    <br>
+    <form action="" method="post" enctype="multipart/form-data">
+        {{form.as_p}}
+        {% csrf_token %}
+    </form>
+    <br>
+    마감기간:
+    <br>
+    <input name="when_end" type=date" value="">
+    <br>
+    의뢰금액:
+    <br>
+    <input name="how_much_request" type="text" value="">
+    <br>
+    <br>
+    <input class="btn btn-primary" type="submit" value="requesthome">
+</form>
+
+<a href="{% url 'explain' %}">의뢰 하기</a>
+{% endblock %}

@@ -1,4 +1,19 @@
 {% extends 'base.html' %}
 {% block content %}
-<p>디자이너들을 볼 수 있는 화면입니다..</p>
+<p>디자이너들을 볼 수 있는 화면입니다!</p>
+<br>
+<br>
+<form>
+{% for element in Arts.all %}
+<br>
+    <form>
+    <p>{{ element.title }}</p>
+<br>
+    <img src="{{ element.image.url }}">
+<br>
+    <p>{{ element.description }}</p>
+        <a href="{% url 'detail' element.id %}">detail로 가는 버튼!</a>
+    </form>
+</form>
+{% endfor %}
 {% endblock %}

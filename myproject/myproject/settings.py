@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'photo',
     'mypage.apps.MypageConfig',
     'designer',
+    'request',
 ]
 
 MIDDLEWARE = [
