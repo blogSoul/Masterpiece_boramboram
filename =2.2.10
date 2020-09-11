@@ -1,3 +1,0 @@
-Requirement already satisfied: django in c:\users\minwook\appdata\local\programs\python\python37-32\lib\site-packages (2.2.10)
-Requirement already satisfied: sqlparse in c:\users\minwook\appdata\local\programs\python\python37-32\lib\site-packages (from django) (0.3.0)
-Requirement already satisfied: pytz in c:\users\minwook\appdata\local\programs\python\python37-32\lib\site-packages (from django) (2019.1)
