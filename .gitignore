@@ -224,3 +224,9 @@ pip-selfcheck.json
 =2.1.1/
 =2.2.9/
 # End of https://www.gitignore.io/api/venv,django,pycharm
+
+/myvenv
+/.idea
+=2.2.10
+myproject/=7.1.0
+myproject/6.2.2
