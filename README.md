@@ -1,5 +1,3 @@
-
-
 #  모그리면돼? _2019 멋쟁이사자처럼 해커톤 프로젝트
 ![img](https://img.shields.io/badge/Platform--orange)     ![project_start_date](https://img.shields.io/badge/Project%20Start%20Date-2019--08--09-informational.svg)
 > 그림이라는 재능을 사고 팔 수 있는 쇼핑몰 형식 서비스
@@ -63,5 +61,4 @@
 	- 광고 수수료
 	- 의뢰자와 디자이너간 거래 수수료 (의뢰자와 디자이너간 거래구조)
 	![의뢰자_디자이너_거래구조](./img/거래구조.png)
- 
  
